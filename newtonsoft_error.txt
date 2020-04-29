@@ -1,0 +1,97 @@
+[    326797] [    GTAProcess]             MainThrd/ Could not load assembly System.Runtime - loading exceptions: Exception loading assembly System.Runtime: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    326797] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    326813] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    326813] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    326813] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    326829] [    GTAProcess]             MainThrd/ 
+[    326829] [    GTAProcess]             MainThrd/ Could not load assembly System.Runtime - loading exceptions: Exception loading assembly System.Runtime: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    326829] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    326844] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    326844] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    326844] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    326860] [    GTAProcess]             MainThrd/ 
+[    326860] [    GTAProcess]             MainThrd/ Could not load assembly System.Dynamic.Runtime - loading exceptions: Exception loading assembly System.Dynamic.Runtime: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    326860] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    326875] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    326875] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    326875] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    326891] [    GTAProcess]             MainThrd/ 
+[    326891] [    GTAProcess]             MainThrd/ Could not load assembly System.Dynamic.Runtime - loading exceptions: Exception loading assembly System.Dynamic.Runtime: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    326907] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    326907] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    326922] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    326922] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    326922] [    GTAProcess]             MainThrd/ 
+[    326938] [    GTAProcess]             MainThrd/ Could not load assembly System.Linq.Expressions - loading exceptions: Exception loading assembly System.Linq.Expressions: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    326938] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    326954] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    326954] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    326954] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    326969] [    GTAProcess]             MainThrd/ 
+[    326969] [    GTAProcess]             MainThrd/ Could not load assembly System.Linq.Expressions - loading exceptions: Exception loading assembly System.Linq.Expressions: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    326985] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    326985] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    327000] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    327000] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    327016] [    GTAProcess]             MainThrd/ 
+[    327016] [    GTAProcess]             MainThrd/ Could not load assembly System.ObjectModel - loading exceptions: Exception loading assembly System.ObjectModel: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    327016] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    327032] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    327032] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    327047] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    327047] [    GTAProcess]             MainThrd/ 
+[    327063] [    GTAProcess]             MainThrd/ Could not load assembly System.ObjectModel - loading exceptions: Exception loading assembly System.ObjectModel: System.IO.FileNotFoundException: Unable to find the specified file.
+
+[    327063] [    GTAProcess]             MainThrd/   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR (System.Int32 errorCode) [0x0000a] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    327063] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFileInternal (System.String fileName) [0x00011] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:621 
+
+[    327079] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager+DirectScriptHost.OpenHostFile (System.String fileName) [0x00000] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:607 
+
+[    327079] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00075] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:192 
+
+[    327094] [    GTAProcess]             MainThrd/ 
+[    327094] [    GTAProcess]             MainThrd/ Could not load assembly Newtonsoft.Json - loading exceptions: Exception loading assembly Newtonsoft.Json: System.Reflection.ReflectionTypeLoadException: The classes in the module cannot be loaded.
+
+[    327125] [    GTAProcess]             MainThrd/   at (wrapper managed-to-native) System.Reflection.Assembly:GetTypes (System.Reflection.Assembly,bool)
+
+[    327157] [    GTAProcess]             MainThrd/   at System.Reflection.Assembly.GetTypes () [0x00000] in <74fbbe963b7e417b8d715b858c5c584f>:0 
+
+[    327172] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.CreateAssemblyInternal (System.String assemblyFile, System.Byte[] assemblyData, System.Byte[] symbolData) [0x00076] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:130 
+
+[    327204] [    GTAProcess]             MainThrd/   at CitizenFX.Core.InternalManager.LoadAssemblyInternal (System.String baseName, System.Boolean useSearchPaths) [0x00177] in C:\gl\builds\edf06b9b\0\cfx\fivem\code\client\clrcore\InternalManager.cs:231 
