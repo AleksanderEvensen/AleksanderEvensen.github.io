@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
 
     // Color Variables
@@ -5,6 +7,10 @@
     --color-background: #eeeeee;
     --color-dark: #444444;
     --color-secondary: #FFF;
+
+    --color-ind-up: #2ecc71;
+    --color-ind-stay: #e74c3c;
+    --color-ind-down: #f1c40f;
     
     // Navbar variables
     
@@ -21,15 +27,15 @@
 
 
 body, head, html {
-    margin:0;
-    padding:0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    margin:0; // fjern standard mellomrommet i body elementet
+    padding:0; // fjern standard mellomrommet i body elementet
+    width: 100vw; // Sett størrelsen til hele vinduet
+    height: 100vh; // Sett størrelsen til hele vinduet
+    overflow: hidden; // Ikke hvis innhold som går utenfor body elementet
 }
 
 body {
-    background-color: var(--color-background);    
+    background-color: var(--color-background); // Sett bakgrunnsfargen til websiden til color-background variabelet 
 }
 
 
@@ -37,68 +43,101 @@ body {
 
 
 navbar {
-    position: fixed;
+    position: fixed; // gjør at navigasjons baren er alltid synlig og over de andre elementene
+    // Plasser den helt øverst i hjørnet
     top: 0;
     left: 0;
+
+    // Fjern muligheten til å dra og velge tekst og bilder i navigasjonsbaren
     * {
         user-select: none;
         -webkit-user-drag: none;
     }
 
     
-    
+    // hvis det er innhold som et utenfor navigasjonsbaren gjemmer vi det
     overflow: hidden;
+
+    // Sett standard størrelsen til navigasjonsbaren
     width: var(--navbar-size);
+
+    // Sett høyden til hele høyden av skjermen
     height: 100vh;
+
+    // Sett bakgrunnsfargen
     background-color: var(--color-dark);
+
+    // Sett en transition på elemente for å gjøre endringene av verdier "smoooooth"
     transition: var(--navbar-anim-transition);
 
 
     navheader {
         .nav-header-icon {
+            // Sett transition på meny ikonet
             transition: var(--navbar-anim-transition);
+
+            // legg til en padding som gjør at bildet ikke strekker seg helt ut i kantene
             padding: var(--navbar-icon-padding);
+
+            // Gjør noen kalkulasjoner for å sørge for at den passer inn med paddingen
             width: calc(var(--navbar-size) - var(--navbar-icon-padding) * 2);
             height: calc(var(--navbar-size) - var(--navbar-icon-padding) * 2);
 
         }
 
         .nav-header-icon:hover {
-            content: attr(data-src);
+            // Endre bakgrunnsfargen når musepekeren er over ikonet
             background-color: var(--navbar-color-hover);
         }
     }
 
     navitems {
+        // Lag en gridd som automatisk legger til kolonner ettersom hvor mange elementer det er i navigasjonsbaren
         display: grid;
         grid-template-columns: repeat(auto, var(--navbar-size));
+
+        // Fjern linjen under linkene
         * {
             text-decoration: none;
         }
+
         a.nav-item {
+            // Posisjoner ikonet og teksten til navigasjonselementet ved siden av hverandre
             display: flex;
             flex-direction: row;
+
+            // Sett transition for å fade bakgrunnsfargen inn og ut
             transition: var(--navbar-anim-transition);
+
             .nav-item-icon {
+                // Legg til en padding på ikonet
                 margin: var(--navbar-icon-padding);
+                // Gjør noen kalkulasjoner på bredden og høyden for at den skal passe inn med margin-en
                 width: calc(var(--navbar-size) - var(--navbar-icon-padding) * 2);
                 height: calc(var(--navbar-size) - var(--navbar-icon-padding) * 2);
             }
 
             .nav-item-text {
+                // Sentrer teksten i div-en
                 margin-top: auto;
                 margin-bottom: auto;
+
+                // Gjør mellomrommet mellom ikonet og teksten litt større 
                 margin-left: 10px;
+
+                // Endre fonten og størrelsen på teksten
                 font: var(--navbar-text-font);
                 color:var(--color-secondary);
             }
         }
 
         a.nav-item-active {
+            // Sett bakgrunnsfargen når elementet er aktivt
             background-color: var(--navbar-color-active);
         }
 
         a.nav-item:hover {
+            // Sett bakgrunnsfargen når brukeren har musepekeren over elementet
             background-color: var(--navbar-color-hover);
         }
     }
@@ -107,46 +146,196 @@ navbar {
 navbar.nav-open {
     // Setter størrelsen til den nye åpna
     width: var(--navbar-open-size);
-
     navheader {
         .nav-header-icon {
-            padding: var(--navbar-icon-padding);
+            // Endre størrelsen når navigasjonsbaren er åpen til å fylle bredden på det animerte ikonet
             width: calc(var(--navbar-open-size) - var(--navbar-icon-padding) * 2);
             height: calc(var(--navbar-open-size) - var(--navbar-icon-padding) * 2);
 
         }
     }
+    
 }
 
 
 
 
 #content {
-    overflow-y: auto;
+    
+    // Sett standard font til å være Microsoft Sans Serif og 7% av skjerm høyden
     font-family: 'Microsoft Sans Serif';
     font-size: 7vh;
+    
+    // Legg til en scrollbar hvis det er nødvendig
+    overflow-y: auto;
+    
+    // Offset content siden med navigasjonsbar størrelsen.
+    margin-left: var(--navbar-size);
+    // Kalkuler størrelsen
     width: calc(100% - var(--navbar-size));
+    // Sett høyden til å fylle body tag-en
     height: 100%;
     max-height: 100%;
     min-height: 0;
-    margin-left: var(--navbar-size);
-
+    
+    
     #content-header {
+        // Fyll bredden på #content
         width: 100%;
+        // Høyde på 40% av skjerm høyden
         height: 40vh;
+        // Lite mellomrom mellom banner og innhold
         margin-bottom: 10px;
         .header-text {
+            // Tint banner bildet med en svart farge
             width: 100%;
             height: 100%;
             background-color: rgba(0,0,0,0.7);
+
             div {
+                // Sentrer teksten i midten
                 text-align: center;
+
+                // Sett posisjonen til å være relativt til parent
                 position: relative;
+
+                // Plasser teksten midt på y-aksen
                 top:50%;
                 left:50%;
                 transform: translate(-50%,-50%);
+
+                // Gi teksten en hvit farge
                 color:#FFF;
             }
         }
+    }
+
+    .card-title {
+        // Endre tekst tykkelsen på tittelen til kort elementer
+        font-weight: 300;
+        // Standard font
+        font-family: 'Roboto';
+        // Legg til et mellomrom mellom tittel og innhold
+        margin-bottom: 10px;
+        // Endre størrelsen til teksten
+        font-size: 30px
+    }
+
+    .info-card {
+        // Gi en hvit farge til kortet
+        background: var(--color-secondary);
+        // Avrund hjørnene
+        border-radius: 8px;
+        // Legg til en liten skygge rundt kortet
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        // Mellomrom mellom andre elementer
+        margin: 10px;
+
+        // få innholdet til å være litt lenger unda kanten av kortet
+        padding: 10px;
+        
+        .card-content {
+            // Endre tekst størrelse på innhold som ikke er en tittel
+            font-size: 20px;
+            // endre fonten
+            font-family: 'Roboto';
+        }
+    }
+
+    .split-half {
+        // Lag en wrapper for elementer som skal dele skjermen i to
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    // Farge koder som indikatorer
+    .up {
+        color: var(--color-ind-up);
+    }
+
+    .stay {
+        color: var(--color-ind-down);
+    }
+
+    .down {
+        color: var(--color-ind-stay);
+    }
+
+    // Sett standard font (Merker at det blir litt mye av denne standard fonten)
+    font-family: 'Roboto';
+    #multi-crypto-card {
+        // Bakgrunnsfarge til en hvit farge
+        background: var(--color-secondary);
+        // avrunn kantene
+        border-radius: 8px;
+        // legg til en skygge
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        // mellomrom mellom andre elementer
+        margin: 10px;
+        // mellomrom mellom innhold og kanten av kortet
+        padding: 10px;
+
+        .card-content {
+            // lag en 2x2 grid
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            // Font størrelse på innholdet
+            font-size: 25px;
+            .currency_elem {
+                // fr betyr fraction
+                // lag en 50 x 1fr x 1fr grid
+                display: grid;
+                grid-template-columns: 50px 1fr 1fr;
+                .coin_icon {
+                    // Gjør ikonet mindre på hoved siden
+                    margin: 5px;
+                    width: calc(50px - 10px);
+                    height: calc(50px - 10px);
+                }
+
+                // Juster høyde og tekst størrelse på navnene til valutaene på index siden
+                .name {
+                    margin-left: 10px;
+                    line-height: 50px;
+                }
+
+                // gjør det samme på verdien av valutaene
+                .value {
+                    line-height: 50px;
+                }
+            }
+
+        }
+    }
+
+
+    #single-crypto-card {
+        /*
+            Samme greia som forrrige gang
+            kanskje jeg burde ha en class som gjorde at jeg slapp å måtte skrive dette så mange ganger
+        */
+        background: var(--color-secondary);
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        padding: 10px;
+
+
+        .card-content {
+            // Setter størrelsen til den store penge verdien på valuta sidene
+            .value {
+                font-size: 40px;
+            }
+
+            // Endre størrelse og plasser elementene som indikerer endringen de siste 30 dagene på valuta sidene
+            .change {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                font-size: 30px;
+            }
+        }
+
+
     }
 }
