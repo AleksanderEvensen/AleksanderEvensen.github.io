@@ -3,8 +3,6 @@ const fetchCrypto = async (symbol, apiKey, currency = 'USD') => {
     console.log(URLPath);
     return await fetch(URLPath).then(res => res.json());
 }
-
-
 (async ()=> {
     // console.log("Bitcoin\n\n")
     // console.log(JSON.stringify(await fetchCrypto('BTC', 'TUTBF3A8SG23ZWCJ', 'NOK'), null, 4))
