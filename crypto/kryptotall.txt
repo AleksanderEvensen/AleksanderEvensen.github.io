@@ -1,4 +1,0 @@
-Bitcoin  - 129 497 - 165 564
-Ethereum - 3 803   - 5 119
-Litecoin - 514     - 717
-XRP      - 2.17    - 5.19

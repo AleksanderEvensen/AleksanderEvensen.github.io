@@ -1,3 +1,0 @@
-HUSK AT:
-
-main.scss er utvikler filen min for style sheets du finner ikke kommentarer i css filen
